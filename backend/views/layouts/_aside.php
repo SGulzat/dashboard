@@ -22,21 +22,51 @@ use common\widgets\Sidebar;
                     [
                         'label' => 'Главная',
                         'url' => ['/site/index'],
-                        'icon' => 'fa-link',
+                        'icon' => 'fa-home',
                         'void' => true,
                     ],
                     [
-                        'label' => 'Ошибка',
-                        'url' => ['/site/error'],
-                        'icon' => 'fa-link',
+                        'label' => 'Отделы',
+                        'url' => ['/department'],
+                        'icon' => 'fa-university',
                         'void' => true,
                     ],
                     [
-                        'label' => 'Новости',
-                        'url' => ['/news/index'],
-                        'icon' => 'fa-link',
+                        'label' => 'Уровни разработчика',
+                        'url' => ['/developer-level'],
+                        'icon' => 'fa-line-chart',
                         'void' => true,
                     ],
+                    [
+                        'label' => 'Уровни задач',
+                        'url' => ['/task-level'],
+                        'icon' => 'fa-bar-chart',
+                        'void' => true,
+                    ],
+                    [
+                        'label' => 'Сотрудники',
+                        'url' => ['/employees'],
+                        'icon' => 'fa-users',
+                        'void' => true,
+                    ],
+                    [
+                        'label' => 'Задачи',
+                        'url' => ['/tasks'],
+                        'icon' => 'fa-tasks',
+                        'void' => true,
+                    ],
+                    [
+                        'label' => 'Назначение задач',
+                        'url' => ['/task-assign'],
+                        'icon' => 'fa-address-card',
+                        'void' => true,
+                    ],
+                    [
+                        'label' => 'Отчеты',
+                        'url' => ['/tasks-report'],
+                        'icon' => 'fa-bar-chart',
+                        'void' => true,
+                    ]
                     /*[
                         'label' => Yii::t('app', 'Matching'),
                         'icon' => 'fa-compress aria-hidden="true"',

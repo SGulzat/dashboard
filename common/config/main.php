@@ -6,6 +6,13 @@ return [
     ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
+        'queue' => [
+            'class' => \yii\queue\db\Queue::className(),
+            'db' => 'db', // Имя подключения к базе данных
+            'tableName' => '{{%queue}}', // Название таблицы для очереди
+            'channel' => 'default', // Канал очереди
+            'mutex' => \yii\mutex\MysqlMutex::className(), // Мьютекс для безопасного выполнения
+        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
